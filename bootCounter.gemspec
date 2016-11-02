@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["BootCoder"]
   spec.email         = ["bootcoder@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Provide random Boots to navigate during live code.}
+  spec.description   = %q{Simple usage, just input a integer value for the number of Boots you have. Keep hitting enter until you've used them up.}
+  spec.homepage      = "https://github.com/bootcoder/bootCounter"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
