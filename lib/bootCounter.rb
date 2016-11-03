@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 require "bootCounter/version"
 
 module BootCounter
@@ -5,7 +6,7 @@ module BootCounter
   def get_initial_count
     puts "The GEM will give you a random integer representing a Boot in breakout"
     puts "until there are no Boots left. The goal is to promote diversity in navigational"
-    puts "interactions during livecoding events."
+    puts "interactions whilst livecoding for a group."
     puts
     print "How many boots are booting? :> "
     gets.chomp
@@ -39,4 +40,22 @@ module BootCounter
 
 end
 
-BootCounter.runner
+# BootCounter.runner
+
+
+
+class Thing
+  def initialize
+    @name = "tom"
+    @sides = 6
+    @price = 4
+  end
+  def to_s
+    puts @name.upcase
+    puts "#{@sides}....................#{@price}"
+    return
+  end
+end
+
+t = Thing.new
+puts t
