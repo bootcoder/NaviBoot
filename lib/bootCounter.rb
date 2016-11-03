@@ -1,7 +1,12 @@
 #!/usr/bin/env ruby
 require "bootCounter/version"
 
-module BootCounter
+class BootCounter
+
+  def initialize
+    @boot_nums = []
+    runner
+  end
 
   def get_initial_count
     puts "The GEM will give you a random integer representing a Boot in breakout"
@@ -39,23 +44,3 @@ module BootCounter
   end
 
 end
-
-# BootCounter.runner
-
-
-
-class Thing
-  def initialize
-    @name = "tom"
-    @sides = 6
-    @price = 4
-  end
-  def to_s
-    puts @name.upcase
-    puts "#{@sides}....................#{@price}"
-    return
-  end
-end
-
-t = Thing.new
-puts t
