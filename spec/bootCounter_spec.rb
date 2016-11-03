@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe BootCounter do
+describe NaviBoot do
   it 'has a version number' do
-    expect(BootCounter::VERSION).not_to be nil
+    expect(NaviBoot::VERSION).not_to be nil
   end
 
   it 'does something useful' do

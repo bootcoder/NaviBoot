@@ -1,12 +1,8 @@
-#!/usr/bin/env ruby
-require "bootCounter/version"
+require "NaviBoot/version"
 
-class BootCounter
+module NaviBoot
 
-  def initialize
-    @boot_nums = []
-    runner
-  end
+  extend self
 
   def get_initial_count
     puts "The GEM will give you a random integer representing a Boot in breakout"

@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'bootCounter/version'
+require 'NaviBoot/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "bootCounter"
-  spec.version       = BootCounter::VERSION
+  spec.name          = "NaviBoot"
+  spec.version       = NaviBoot::VERSION
   spec.authors       = ["BootCoder"]
   spec.email         = ["bootcoder@gmail.com"]
 
   spec.summary       = %q{Provide random Boots to navigate during live code.}
   spec.description   = %q{Simple usage, just input a integer value for the number of Boots you have. Keep hitting enter until you've used them up.}
-  spec.homepage      = "https://github.com/bootcoder/bootCounter"
+  spec.homepage      = "https://github.com/bootcoder/NaviBoot"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
-  spec.executables   << "bootCounter"
+  spec.executables   << "NaviBoot"
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.12"
